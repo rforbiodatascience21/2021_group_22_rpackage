@@ -1,4 +1,5 @@
-#' This function converts  
+#' This function converts a list of RNA-codons to amino acids sequence
+#' @export  
 
 RNA_codons_to_aa <- function(codons){
   std_code_table <- c("UUU" = "F", "UCU" = "S", "UAU" = "Y", "UGY" = "C",
