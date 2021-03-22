@@ -1,8 +1,3 @@
-
-```{r setup, include=FALSE}
-knitr::opts_chunk$set(echo = TRUE)
-```
-
 ## Description
 This repository contains a simple R package created by group 22.
 
