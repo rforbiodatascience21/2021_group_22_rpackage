@@ -1,4 +1,4 @@
-#' This 
+#' This function converts  
 
 RNA_codons_to_aa <- function(codons){
   std_code_table <- c("UUU" = "F", "UCU" = "S", "UAU" = "Y", "UGY" = "C",
