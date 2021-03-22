@@ -7,4 +7,4 @@ random_dna <- function(l){
   dna = paste0(nucleotides, collapse = "")
   return(dna)
 }
-#
+#c
