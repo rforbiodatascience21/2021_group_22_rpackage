@@ -1,10 +1,11 @@
-#' R/random_dna.R
-#' Sample random string of nucleotides of size l
-#' input: l, length
-#' return: nulceotides
-random_dna <- function(l){
-  nucleotides <- sample(c("A", "T", "G", "C"), size = l, replace = TRUE)
-  dna = paste0(nucleotides, collapse = "")
-  return(dna)
+#' R/make_codons.R
+#' Create codons from DNA
+#' input: dna, s=1
+#' return: codons
+mk_codons <- function(dna, s = 1){
+  l = nchar(dna)
+  codons <- substring(dna,
+                      first = seq(from = s, to = l-3+1, by = 3),
+                      last = seq(from = 3+s-1, to = l, by = 3))
+  return(codons)
 }
-#
