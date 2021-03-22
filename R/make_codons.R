@@ -2,6 +2,7 @@
 #' Create codons from DNA
 #' input: dna, s=1
 #' return: codons
+#' @export
 mk_codons <- function(dna, s = 1){
   l = nchar(dna)
   codons <- substring(dna,
